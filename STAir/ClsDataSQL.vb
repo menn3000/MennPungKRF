@@ -14,10 +14,6 @@ Imports System.Net.Mail
 
 Public Class clsDataSQL
 
-
-
-
-
     Friend CNS As String
     Public objConn As SqlConnection
     Private objComm As SqlCommand
@@ -37,20 +33,20 @@ Public Class clsDataSQL
             strDatabaseProfile = clsUtility.strDBProfileTesting
         End Try
 
-       
-            Select Case strDatabaseProfile
-                Case clsUtility.strDBProfileDeveloping
-                    CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
+
+        Select Case strDatabaseProfile
+            Case clsUtility.strDBProfileDeveloping
+                CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
 
             Case clsUtility.strDBProfileTesting
                 CNS = "Server=Admin01;Database=STAir;User Id=sa;Password=0812587733;Connect Timeout=300;"
-                Case clsUtility.strDBProfileProduction
-                    CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
-                Case clsUtility.strDBProfileTraining
-                    CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
+            Case clsUtility.strDBProfileProduction
+                CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
+            Case clsUtility.strDBProfileTraining
+                CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
 
-                Case ""
-
+            Case Else
+                CNS = "Data Source=(local);Initial Catalog=STAir;User Id=FastkeyUser;Password=voa12345;Connect Timeout=300;"
         End Select
 
 
@@ -85,7 +81,7 @@ Public Class clsDataSQL
 
     End Function
     Public Function DB_GetDataReader(ByVal cmd As SqlCommand) As SqlDataReader
-      
+
         Dim objConn As New SqlConnection(CNS)
         Dim dr As SqlDataReader
 
@@ -118,11 +114,11 @@ Public Class clsDataSQL
         Call DB_Disconnect()
     End Function
 
-    
-   
+
+
 
     Public Function DB_GetDataSet(ByVal strStmt As String, ByVal strTableName As String, ByVal bolFillSchema As Boolean) As DataSet
-       
+
         Call DB_Connect()
         DB_GetDataSet = New DataSet()
         objAdapter = New SqlDataAdapter(strStmt, objConn)
@@ -204,7 +200,7 @@ Public Class clsDataSQL
 
         Dim cmd As SqlCommand
 
-        
+
 
         For i = 0 To aryCMD.Count - 1
             cmd = aryCMD(i)
@@ -563,7 +559,8 @@ NextLoop:
         Dim ds As New DataSet
         ds.Tables.Add(dtbItems)
         ds = Me.DB_GetDataSet(strSQL, "Items")
-        Me.dtbItems = ds.Tables("Items")
+        'Me.dtbItems = ds.Tables("Items")
+        clsDataSQL.dtbItems = ds.Tables("Items")
     End Sub
     Friend Sub CreateItemsTableColumn(ByRef dtbTable As DataTable)
         dtbTable.Columns.Add("ID", Type.GetType("System.Int32"))
@@ -732,7 +729,7 @@ NextLoop:
 
         Dim hh, mm, ss As Integer
 
-        Dim strReturn As String
+        Dim strReturn As String = ""
         Dim strTime As String = ""
         Select Case intTimeMode
             Case 1
@@ -799,6 +796,7 @@ NextLoop:
 
         End Select
     End Function
+
     'Private Sub EmailAdmin(ByVal strSubject As String, ByVal strMsg As String)
     '    ' On Error Resume Next
 

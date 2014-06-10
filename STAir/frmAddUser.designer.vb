@@ -91,16 +91,16 @@ Partial Class frmAddUser
         Me.Label27 = New System.Windows.Forms.Label()
         Me.cboPAir = New System.Windows.Forms.ComboBox()
         Me.tbPosition = New System.Windows.Forms.TabPage()
-        Me.egridPosition = New STAir.ctrEmpPositionHistory()
         Me.tbLevel = New System.Windows.Forms.TabPage()
-        Me.egridEmpLevelHistory = New STAir.ctrEmpLevelHistory()
         Me.tbEducation = New System.Windows.Forms.TabPage()
-        Me.egridEmpEduHistory = New STAir.ctrEmpEducationHistory()
         Me.tbFamily = New System.Windows.Forms.TabPage()
-        Me.egridEmpKids = New STAir.ctrEmployeeKids()
         Me.tbWorkLog = New System.Windows.Forms.TabPage()
-        Me.egridWorkLog = New STAir.ctrPersonalWorkLog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.egridPosition = New STAir.ctrEmpPositionHistory()
+        Me.egridEmpLevelHistory = New STAir.ctrEmpLevelHistory()
+        Me.egridEmpEduHistory = New STAir.ctrEmpEducationHistory()
+        Me.egridEmpKids = New STAir.ctrEmployeeKids()
+        Me.egridWorkLog = New STAir.ctrPersonalWorkLog()
         Me.EmployeeTab.SuspendLayout()
         Me.tbPersonalData.SuspendLayout()
         Me.pnlHidden.SuspendLayout()
@@ -418,7 +418,7 @@ Partial Class frmAddUser
         Me.pnlHidden.Controls.Add(Me.txtMainCategoryID)
         Me.pnlHidden.Controls.Add(Me.cboEmp)
         Me.pnlHidden.Controls.Add(Me.Emp)
-        Me.pnlHidden.Location = New System.Drawing.Point(866, 630)
+        Me.pnlHidden.Location = New System.Drawing.Point(866, 602)
         Me.pnlHidden.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pnlHidden.Name = "pnlHidden"
         Me.pnlHidden.Size = New System.Drawing.Size(390, 71)
@@ -464,7 +464,6 @@ Partial Class frmAddUser
         Me.cmdEmpImage.Size = New System.Drawing.Size(38, 35)
         Me.cmdEmpImage.TabIndex = 94
         Me.cmdEmpImage.UseVisualStyleBackColor = False
-        Me.cmdEmpImage.Visible = False
         '
         'Label20
         '
@@ -475,7 +474,6 @@ Partial Class frmAddUser
         Me.Label20.Size = New System.Drawing.Size(49, 20)
         Me.Label20.TabIndex = 93
         Me.Label20.Text = "รูปถ่าย"
-        Me.Label20.Visible = False
         '
         'PictureBox1
         '
@@ -490,7 +488,6 @@ Partial Class frmAddUser
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 92
         Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
         '
         'txtNickName
         '
@@ -750,7 +747,7 @@ Partial Class frmAddUser
         Me.pnlPermission.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlPermission.Location = New System.Drawing.Point(0, 0)
         Me.pnlPermission.Name = "pnlPermission"
-        Me.pnlPermission.Size = New System.Drawing.Size(1268, 717)
+        Me.pnlPermission.Size = New System.Drawing.Size(1268, 724)
         Me.pnlPermission.TabIndex = 8
         '
         'Label14
@@ -840,18 +837,6 @@ Partial Class frmAddUser
         Me.tbPosition.Text = "ประวัติตำแหน่ง"
         Me.tbPosition.UseVisualStyleBackColor = True
         '
-        'egridPosition
-        '
-        Me.egridPosition.AutoScroll = True
-        Me.egridPosition.CurrenPositionID = 0
-        Me.egridPosition.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.egridPosition.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.egridPosition.Location = New System.Drawing.Point(0, 0)
-        Me.egridPosition.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.egridPosition.Name = "egridPosition"
-        Me.egridPosition.Size = New System.Drawing.Size(1268, 717)
-        Me.egridPosition.TabIndex = 0
-        '
         'tbLevel
         '
         Me.tbLevel.Controls.Add(Me.egridEmpLevelHistory)
@@ -861,17 +846,6 @@ Partial Class frmAddUser
         Me.tbLevel.TabIndex = 5
         Me.tbLevel.Text = "ประวัติระดับ"
         Me.tbLevel.UseVisualStyleBackColor = True
-        '
-        'egridEmpLevelHistory
-        '
-        Me.egridEmpLevelHistory.CurrenLevel = 0.0R
-        Me.egridEmpLevelHistory.CurrentSalary = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.egridEmpLevelHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.egridEmpLevelHistory.Location = New System.Drawing.Point(0, 0)
-        Me.egridEmpLevelHistory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.egridEmpLevelHistory.Name = "egridEmpLevelHistory"
-        Me.egridEmpLevelHistory.Size = New System.Drawing.Size(1194, 752)
-        Me.egridEmpLevelHistory.TabIndex = 0
         '
         'tbEducation
         '
@@ -885,16 +859,6 @@ Partial Class frmAddUser
         Me.tbEducation.Text = "การศึกษา"
         Me.tbEducation.UseVisualStyleBackColor = True
         '
-        'egridEmpEduHistory
-        '
-        Me.egridEmpEduHistory.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.egridEmpEduHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.egridEmpEduHistory.Location = New System.Drawing.Point(4, 5)
-        Me.egridEmpEduHistory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.egridEmpEduHistory.Name = "egridEmpEduHistory"
-        Me.egridEmpEduHistory.Size = New System.Drawing.Size(1260, 707)
-        Me.egridEmpEduHistory.TabIndex = 0
-        '
         'tbFamily
         '
         Me.tbFamily.Controls.Add(Me.egridEmpKids)
@@ -906,16 +870,6 @@ Partial Class frmAddUser
         Me.tbFamily.Text = "บุตร"
         Me.tbFamily.UseVisualStyleBackColor = True
         '
-        'egridEmpKids
-        '
-        Me.egridEmpKids.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.egridEmpKids.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.egridEmpKids.Location = New System.Drawing.Point(0, 0)
-        Me.egridEmpKids.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.egridEmpKids.Name = "egridEmpKids"
-        Me.egridEmpKids.Size = New System.Drawing.Size(1268, 717)
-        Me.egridEmpKids.TabIndex = 29
-        '
         'tbWorkLog
         '
         Me.tbWorkLog.Controls.Add(Me.egridWorkLog)
@@ -926,6 +880,53 @@ Partial Class frmAddUser
         Me.tbWorkLog.Text = "บันทึกการทำงาน"
         Me.tbWorkLog.UseVisualStyleBackColor = True
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'egridPosition
+        '
+        Me.egridPosition.AutoScroll = True
+        Me.egridPosition.CurrenPositionID = 0
+        Me.egridPosition.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.egridPosition.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.egridPosition.Location = New System.Drawing.Point(0, 0)
+        Me.egridPosition.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.egridPosition.Name = "egridPosition"
+        Me.egridPosition.Size = New System.Drawing.Size(1268, 724)
+        Me.egridPosition.TabIndex = 0
+        '
+        'egridEmpLevelHistory
+        '
+        Me.egridEmpLevelHistory.CurrenLevel = 0.0R
+        Me.egridEmpLevelHistory.CurrentSalary = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.egridEmpLevelHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.egridEmpLevelHistory.Location = New System.Drawing.Point(0, 0)
+        Me.egridEmpLevelHistory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.egridEmpLevelHistory.Name = "egridEmpLevelHistory"
+        Me.egridEmpLevelHistory.Size = New System.Drawing.Size(1194, 752)
+        Me.egridEmpLevelHistory.TabIndex = 0
+        '
+        'egridEmpEduHistory
+        '
+        Me.egridEmpEduHistory.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.egridEmpEduHistory.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.egridEmpEduHistory.Location = New System.Drawing.Point(4, 5)
+        Me.egridEmpEduHistory.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.egridEmpEduHistory.Name = "egridEmpEduHistory"
+        Me.egridEmpEduHistory.Size = New System.Drawing.Size(1260, 714)
+        Me.egridEmpEduHistory.TabIndex = 0
+        '
+        'egridEmpKids
+        '
+        Me.egridEmpKids.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.egridEmpKids.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.egridEmpKids.Location = New System.Drawing.Point(0, 0)
+        Me.egridEmpKids.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.egridEmpKids.Name = "egridEmpKids"
+        Me.egridEmpKids.Size = New System.Drawing.Size(1268, 724)
+        Me.egridEmpKids.TabIndex = 29
+        '
         'egridWorkLog
         '
         Me.egridWorkLog.Dock = System.Windows.Forms.DockStyle.Fill
@@ -933,12 +934,8 @@ Partial Class frmAddUser
         Me.egridWorkLog.Location = New System.Drawing.Point(0, 0)
         Me.egridWorkLog.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.egridWorkLog.Name = "egridWorkLog"
-        Me.egridWorkLog.Size = New System.Drawing.Size(1268, 717)
+        Me.egridWorkLog.Size = New System.Drawing.Size(1268, 724)
         Me.egridWorkLog.TabIndex = 0
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'frmAddUser
         '

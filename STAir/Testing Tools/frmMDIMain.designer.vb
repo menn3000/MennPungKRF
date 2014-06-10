@@ -37,7 +37,6 @@ Partial Class frmMDIMain
         Me.mnuOfficeAdmin = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuEmployee = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuPositions = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuSalaryLevel = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuMainCategory = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripSeparator()
@@ -49,7 +48,7 @@ Partial Class frmMDIMain
         Me.mnuInventoryItems = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuPersonal = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuMyData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuTest = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuSalaryLevel = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -82,7 +81,7 @@ Partial Class frmMDIMain
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.mnuOfficeAdmin, Me.mnuMainInventory, Me.mnuPersonal, Me.mnuTest})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.mnuOfficeAdmin, Me.mnuMainInventory, Me.mnuPersonal})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(755, 24)
@@ -99,19 +98,19 @@ Partial Class frmMDIMain
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(154, 6)
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(152, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(157, 22)
         Me.mnuExit.Text = "ออกจากโปรแกรม"
         '
         'mnuOfficeAdmin
         '
         Me.mnuOfficeAdmin.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuEmployee, Me.ToolStripMenuItem2, Me.mnuHoliday})
         Me.mnuOfficeAdmin.Name = "mnuOfficeAdmin"
-        Me.mnuOfficeAdmin.Size = New System.Drawing.Size(63, 20)
+        Me.mnuOfficeAdmin.Size = New System.Drawing.Size(64, 20)
         Me.mnuOfficeAdmin.Text = "สารบรรณ"
         '
         'mnuEmployee
@@ -126,12 +125,6 @@ Partial Class frmMDIMain
         Me.mnuPositions.Name = "mnuPositions"
         Me.mnuPositions.Size = New System.Drawing.Size(152, 22)
         Me.mnuPositions.Text = "ตำแหน่งงาน"
-        '
-        'mnuSalaryLevel
-        '
-        Me.mnuSalaryLevel.Name = "mnuSalaryLevel"
-        Me.mnuSalaryLevel.Size = New System.Drawing.Size(152, 22)
-        Me.mnuSalaryLevel.Text = "ระดับเงินเดือน"
         '
         'ToolStripMenuItem3
         '
@@ -176,33 +169,33 @@ Partial Class frmMDIMain
         '
         Me.mnuMainInventory.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuInventoryItems})
         Me.mnuMainInventory.Name = "mnuMainInventory"
-        Me.mnuMainInventory.Size = New System.Drawing.Size(37, 20)
+        Me.mnuMainInventory.Size = New System.Drawing.Size(38, 20)
         Me.mnuMainInventory.Text = "วัสดุ"
         '
         'mnuInventoryItems
         '
         Me.mnuInventoryItems.Name = "mnuInventoryItems"
-        Me.mnuInventoryItems.Size = New System.Drawing.Size(152, 22)
+        Me.mnuInventoryItems.Size = New System.Drawing.Size(129, 22)
         Me.mnuInventoryItems.Text = "รายการวัสดุ"
         '
         'mnuPersonal
         '
         Me.mnuPersonal.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuMyData})
         Me.mnuPersonal.Name = "mnuPersonal"
-        Me.mnuPersonal.Size = New System.Drawing.Size(49, 20)
+        Me.mnuPersonal.Size = New System.Drawing.Size(52, 20)
         Me.mnuPersonal.Text = "ส่วนตัว"
         '
         'mnuMyData
         '
         Me.mnuMyData.Name = "mnuMyData"
-        Me.mnuMyData.Size = New System.Drawing.Size(152, 22)
+        Me.mnuMyData.Size = New System.Drawing.Size(133, 22)
         Me.mnuMyData.Text = "ข้อมูลส่วนตัว"
         '
-        'mnuTest
+        'mnuSalaryLevel
         '
-        Me.mnuTest.Name = "mnuTest"
-        Me.mnuTest.Size = New System.Drawing.Size(52, 20)
-        Me.mnuTest.Text = "ทดสอบ"
+        Me.mnuSalaryLevel.Name = "mnuSalaryLevel"
+        Me.mnuSalaryLevel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuSalaryLevel.Text = "ระดับเงินเดือน"
         '
         'frmMDIMain
         '
@@ -248,6 +241,5 @@ Partial Class frmMDIMain
     Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents mnuMyData As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuSalaryLevel As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mnuTest As System.Windows.Forms.ToolStripMenuItem
 
 End Class

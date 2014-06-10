@@ -7,15 +7,33 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdp
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Debug|x86.ActiveCfg = Debug|x86
 		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Debug|x86.Build.0 = Debug|x86
+		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Release|Any CPU.ActiveCfg = Release|x86
+		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Release|Mixed Platforms.Build.0 = Release|x86
 		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Release|x86.ActiveCfg = Release|x86
 		{5BFDB940-3A9B-4203-A60A-CAB8665A6480}.Release|x86.Build.0 = Release|x86
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Debug|Any CPU.ActiveCfg = Debug
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Debug|Any CPU.Build.0 = Debug
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Debug|Mixed Platforms.Build.0 = Debug
 		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Debug|x86.ActiveCfg = Debug
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Release|Any CPU.ActiveCfg = Release
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Release|Any CPU.Build.0 = Release
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Release|Mixed Platforms.ActiveCfg = Release
+		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Release|Mixed Platforms.Build.0 = Release
 		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Release|x86.ActiveCfg = Release
 		{C81E60CB-1AF9-44E0-BFDE-602C23CCFAC4}.Release|x86.Build.0 = Release
 	EndGlobalSection

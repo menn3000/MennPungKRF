@@ -75,10 +75,8 @@
                 Return "ดู แก้ไข และ ตรวจสอบ"
             Case 6
                 Return "ผู้บริหาร"
-
-            Case 999
+            Case Else ' premissionLevel = 999
                 Return "ผู้จัดการระบบ"
-
         End Select
     End Function
 

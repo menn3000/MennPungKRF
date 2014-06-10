@@ -241,9 +241,4 @@ Public Class frmMDIMain
         fSalaryLevel.Show()
         fSalaryLevel.WindowState = FormWindowState.Maximized
     End Sub
-
-    'Test new MDIMain from
-    Private Sub mnuTest_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuTest.Click
-        frmNewMDIMain.Show()
-    End Sub
 End Class
