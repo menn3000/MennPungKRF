@@ -238,18 +238,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Testing Tools\frmEmpDefaultPages.Designer.vb">
-      <DependentUpon>frmEmpDefaultPages.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Testing Tools\frmEmpDefaultPages.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Testing Tools\frmNewMDIMain.Designer.vb">
-      <DependentUpon>frmNewMDIMain.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Testing Tools\frmNewMDIMain.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Category.resx">
@@ -313,12 +301,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Testing Tools\frmEmpDefaultPages.resx">
-      <DependentUpon>frmEmpDefaultPages.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Testing Tools\frmNewMDIMain.resx">
-      <DependentUpon>frmNewMDIMain.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -326,6 +308,7 @@
     </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
     <None Include="DataSchema.lds" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
